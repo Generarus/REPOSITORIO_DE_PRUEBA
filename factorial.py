@@ -1,3 +1,6 @@
+# AUTOR: GENARO HERNANDEZ VALDEZ
+# FECHA: 26 DE JULIO DE 2021
+# ESTE PROGRAMA CALCULA EL FACTORIAL DE UN NÚMERO ENTERO
 def factorial(x):
     f=1
     if x < 0 :
@@ -9,14 +12,14 @@ def factorial(x):
             f = f*i
         return f            
 
-def app():
-    x = int(input('Escribe un Número: '))
-    result = factorial(x)
+def getfactorial():
+    x = int(input('Escribe un Número Entero No Negativo: '))
+    f = factorial(x)
 
-    if result is False:
+    if f is False:
         print('Número no válido')
     else:
-        print('El factorial de', x, 'es', result)
+        print('El factorial de', x, 'es', f)
 
 if __name__ == '__main__':
-    app() 
+    getfactorial() 
