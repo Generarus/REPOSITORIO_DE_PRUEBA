@@ -5,7 +5,7 @@ def factorial(x):
     elif x == 0:
         return f
     else:
-        for i in range(1, x):
+        for i in range(1, x+1):
             f = f*i
         return f            
 
@@ -16,7 +16,7 @@ def app():
     if result is False:
         print('Número no válido')
     else:
-        print('El factorial de %d es %d', x, result)
+        print('El factorial de', x, 'es', result)
 
 if __name__ == '__main__':
     app() 
