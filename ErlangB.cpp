@@ -20,7 +20,7 @@ int main (int s,double a){//s: servidores, a: tráfico ofrecido
     if (a<=0.0 || s<0) printf("Valores no válidos\n");    
     else for (int i=1;i<=s;i++) IB=1.0+i*IB/a;
     B=1.0/IB;
-    printf("El bloqueo de un sistema BCC con %d servidores y tráfico ofrecido %f Erlangs es %f %\n", s, a, B);
+    printf("ErlangB(s=%d,a=%f) = %f %\n", s, a, B);
     system("pause");
     return 0;
 }
